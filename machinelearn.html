@@ -6,7 +6,7 @@
   // Classifier Variable
   let classifier;
   // Model URL
-  let imageModelURL = 'https://teachablemachine.withgoogle.com/models/6OQXAAust/';
+  let imageModelURL = 'https://teachablemachine.withgoogle.com/models/6OQXAAust/model.json';
   
   // Video
   let video;
@@ -16,7 +16,7 @@
 
   // Load the model first
   function preload() {
-    classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+    classifier = ml5.imageClassifier(imageModelURL);
   }
 
   function setup() {
